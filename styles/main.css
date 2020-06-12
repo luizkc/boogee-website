@@ -2,4 +2,19 @@
 
 @tailwind components;
 
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+.btn-blue {
+  @apply bg-blue-500 text-black;
+}
+.btn-blue:hover {
+  @apply bg-blue-700;
+}
+
+@font-face {
+  font-family: "Whitney";
+  src: local("Whitney"), url(./fonts/whitney-medium.otf) format("otf");
+}
+
 @tailwind utilities;
