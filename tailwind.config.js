@@ -2,9 +2,9 @@ module.exports = {
   purge: [],
   theme: {
     fontFamily: {
-      sans: ["Whitney"],
-      serif: ["Whitney"],
-      mono: ["Whitney"],
+      sans: ["whitney"],
+      serif: ["whitney"],
+      mono: ["whitney"],
     },
     extend: {},
   },

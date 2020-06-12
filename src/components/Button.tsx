@@ -12,10 +12,9 @@ const Button = (props: Props) => {
     // return button with fontawesome icon
     return (
       <>
-        <i className={props.icon}></i>
-        <button className="btn btn-blue" onClick={props.onClick}>
+        <button className="btn" onClick={props.onClick}>
           <span role="img" aria-label="icon" className="pr-1">
-            <i className={props.icon}></i>
+            <i className={props.icon}></i>{" "}
           </span>
           {props.text}
         </button>

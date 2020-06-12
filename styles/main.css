@@ -2,19 +2,103 @@
 
 @tailwind components;
 
-.btn {
-  @apply font-bold py-2 px-4 rounded;
-}
-.btn-blue {
-  @apply bg-blue-500 text-black;
-}
-.btn-blue:hover {
-  @apply bg-blue-700;
+@font-face {
+  font-family: "whitney";
+  src: local("whitney"), url(./fonts/whitney-medium.otf) format("otf");
 }
 
 @font-face {
-  font-family: "Whitney";
-  src: local("Whitney"), url(./fonts/whitney-medium.otf) format("otf");
+  font-family: "whitney";
+  src: local("whitney"), url(./fonts/whitney-semibold.otf) format("otf");
+}
+
+html {
+  background-color: #161f38;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply font-semibold text-center;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 42px;
+  font-size: 36px;
+  color: #e8eeff;
+}
+
+nav {
+  @apply relative flex flex-wrap items-center justify-between px-2 py-3 bg-transparent mb-3;
+}
+
+.nav-container {
+  @apply px-4 mx-auto flex flex-wrap items-center justify-between;
+}
+
+.nav-brand-container {
+  @apply w-full relative flex justify-between;
+}
+
+.nav-brand-text {
+  @apply text-sm font-semibold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap opacity-100;
+  font-size: 36px;
+  color: #e8eeff;
+}
+
+.nav-brand-text:hover {
+  @apply opacity-75;
+}
+
+.nav-stack {
+  @apply text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block outline-none;
+}
+
+.nav-links-container {
+  @apply flex flex-col list-none align-middle;
+}
+
+.nav-link {
+  color: #e8eeff;
+  @apply px-2 py-5 mx-10 flex items-center text-xs leading-snug font-semibold text-2xl opacity-100;
+}
+
+.nav-link:hover {
+  @apply opacity-75;
+}
+
+@variants focus {
+  .nav-stack {
+    @apply outline-none;
+  }
+}
+
+@screen lg {
+  .nav-brand-container {
+    @apply w-auto static block justify-start;
+  }
+  .nav-stack {
+    @apply hidden;
+  }
+  .nav-links-container {
+    @apply flex-row ml-auto;
+  }
+}
+
+.btn {
+  @apply font-medium py-2 px-4 rounded-sm;
+  background: linear-gradient(125.22deg, #7289da -2.42%, #4458a0 100%);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  color: #e8eeff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.btn:hover {
+  background: linear-gradient(306.18deg, #6f7ca7 -93.31%, #1e306c 98.7%);
 }
 
 @tailwind utilities;
