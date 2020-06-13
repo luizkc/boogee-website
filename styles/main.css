@@ -28,6 +28,22 @@ h4 {
   color: #e8eeff;
 }
 
+.header {
+  @apply font-semibold text-center;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 42px;
+  font-size: 36px;
+  color: #e8eeff;
+}
+
+p {
+  @apply font-medium text-left;
+  color: #e8eeff;
+  font-size: 18px;
+  line-height: 25px;
+}
+
 nav {
   @apply relative flex flex-wrap items-center justify-between px-2 py-3 bg-transparent mb-3;
 }
@@ -85,6 +101,21 @@ nav {
   }
 }
 
+.svg {
+  margin-left: 23rem;
+}
+
+.discord-ui {
+  background: linear-gradient(116.12deg, #7289da -2.42%, #4458a0 100%);
+  /* main shadow */
+
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  width: 818px;
+  height: 400px;
+  @apply overflow-hidden shadow-lg inline-block float-left;
+}
+
 .btn {
   @apply font-medium py-2 px-4 rounded-sm;
   background: linear-gradient(125.22deg, #7289da -2.42%, #4458a0 100%);
@@ -97,8 +128,33 @@ nav {
   line-height: 36px;
 }
 
+.btn-small {
+  @apply font-medium py-2 px-4 rounded-sm;
+  background: linear-gradient(125.22deg, #7289da -2.42%, #4458a0 100%);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  color: #e8eeff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.btn-small:hover {
+  background: #fff;
+  color: #7289da;
+}
+
 .btn:hover {
   background: linear-gradient(306.18deg, #6f7ca7 -93.31%, #1e306c 98.7%);
+}
+
+.badge {
+  @apply inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 opacity-100;
+}
+
+.badge:hover {
+  @apply opacity-75;
 }
 
 @tailwind utilities;
