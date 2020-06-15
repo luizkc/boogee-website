@@ -38,7 +38,7 @@ h4 {
 }
 
 .header {
-  @apply font-semibold text-center;
+  @apply font-semibold;
   font-style: normal;
   font-weight: bold;
   line-height: 42px;
@@ -194,6 +194,30 @@ nav {
 
 .badge:hover {
   @apply opacity-75;
+}
+
+.quick-link-top {
+  border-top-left-radius: 12px;
+  font-size: 36px;
+  border-top-right-radius: 12px;
+  background: linear-gradient(133.45deg, #4158ac 3.25%, #869ae2 118.58%);
+  width: 267px;
+}
+
+.quick-link-bottom {
+  background: linear-gradient(94.24deg, #7289da -2.42%, #4458a0 100%);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  width: 267px;
+}
+
+.quick-link-sub {
+  @apply font-semibold;
+  font-style: normal;
+  font-weight: bold;
+  color: #e8eeff;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 @tailwind utilities;

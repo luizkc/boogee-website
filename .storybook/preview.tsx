@@ -1,3 +1,4 @@
+import "@storybook/addon-console"
 import { action } from "@storybook/addon-actions"
 import "../styles/main.css"
 import "@fortawesome/fontawesome-free/css/all.min.css"
@@ -7,8 +8,8 @@ import "@fortawesome/fontawesome-free/css/all.min.css"
 // This global object isn't set in storybook context, requiring you to override it to empty functions (no-op),
 // so Gatsby Link doesn't throw any errors.
 global.___loader = {
-    enqueue: () => { },
-    hovering: () => { },
+  enqueue: () => {},
+  hovering: () => {},
 }
 
 // __PATH_PREFIX__ is used inside gatsby-link an other various places. For storybook not to crash, you need to set it as well.
@@ -18,5 +19,5 @@ global.__PATH_PREFIX__ = ""
 // In Storybook it makes more sense to log an action than doing an actual navigate. Checkout the actions addon docs for more info: https://github.com/storybookjs/storybook/tree/master/addons/actions.
 
 window.___navigate = pathname => {
-    action("NavigateTo:")(pathname)
+  action("NavigateTo:")(pathname)
 }

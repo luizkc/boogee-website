@@ -7,10 +7,10 @@ export default {
   component: CardIcon,
 }
 
-export const cardIcon = () => {
-  return (
-    <div className="mx-10 my-10 text-center">
-      <CardIcon icon={"fab fa-discord"} background="#000" />
-    </div>
-  )
-}
+// export const cardIcon = () => {
+//   return (
+//     <div className="mx-10 my-10 text-center">
+//       <CardIcon icon={"fab fa-discord"} background="#000" />
+//     </div>
+//   )
+// }

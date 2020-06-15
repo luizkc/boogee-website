@@ -3,13 +3,13 @@ import "@fortawesome/fontawesome-free/css/all.min.css"
 
 interface Props {
   icon: string
-  size?: "small"
+  size?: "small" | "tiny"
   background: string
 }
 
 export default function CardIcon(props: Props) {
   if (props.icon === "🐶") {
-    if (props.size) {
+    if (props.size === "small") {
       return (
         <button
           disabled={true}
@@ -35,7 +35,20 @@ export default function CardIcon(props: Props) {
       )
     }
   }
-  if (props.size) {
+  if (props.size === "tiny") {
+    return (
+      <button
+        disabled={true}
+        style={{ background: props.background }}
+        className="w-10 h-10 text-white rounded-full cursor-default"
+      >
+        <span role="img" aria-label="icon">
+          <i style={{ fontSize: "36px" }} className={props.icon}></i>
+        </span>
+      </button>
+    )
+  }
+  if (props.size === "small") {
     // return small icon
     return (
       <button
