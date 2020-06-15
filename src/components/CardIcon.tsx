@@ -43,7 +43,10 @@ export default function CardIcon(props: Props) {
         className="w-10 h-10 text-white rounded-full cursor-default"
       >
         <span role="img" aria-label="icon">
-          <i style={{ fontSize: "36px" }} className={props.icon}></i>
+          <i
+            style={{ fontSize: "36px", color: "#e8eeff" }}
+            className={props.icon}
+          ></i>
         </span>
       </button>
     )
@@ -57,7 +60,7 @@ export default function CardIcon(props: Props) {
         className="w-12 h-12 text-white rounded-full cursor-default"
       >
         <span role="img" aria-label="icon">
-          <i className={props.icon + " fa-lg"}></i>
+          <i style={{ color: "#e8eeff" }} className={props.icon + " fa-lg"}></i>
         </span>
       </button>
     )
@@ -69,7 +72,7 @@ export default function CardIcon(props: Props) {
         className="w-16 h-16 text-white rounded-full cursor-default"
       >
         <span role="img" aria-label="icon">
-          <i className={props.icon + " fa-2x"}></i>
+          <i style={{ color: "#e8eeff" }} className={props.icon + " fa-2x"}></i>
         </span>
       </button>
     )

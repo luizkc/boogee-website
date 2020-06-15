@@ -211,6 +211,10 @@ nav {
   width: 267px;
 }
 
+.light {
+  color: #000;
+}
+
 .quick-link-sub {
   @apply font-semibold;
   font-style: normal;

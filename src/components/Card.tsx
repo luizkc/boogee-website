@@ -24,7 +24,7 @@ export default function Card({ ...props }: Props) {
   else tag = "#channel"
   return (
     <div
-      className="bg-gradient text-white max-w-sm md:max-w-full md:flex lg:max-w-full lg:flex border-radius: 12px;"
+      className="bg-gradient light max-w-sm md:max-w-full md:flex lg:max-w-full lg:flex border-radius: 12px;"
       style={{ borderRadius: "12px" }}
     >
       <div

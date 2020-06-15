@@ -7,6 +7,7 @@ module.exports = {
     "@storybook/addon-docs",
     "@storybook/addon-viewport/register",
   ],
+
   webpackFinal: async config => {
     // Transpile Gatsby module because Gatsby includes un-transpiled ES6 code.
     config.module.rules[0].exclude = [/node_modules\/(?!(gatsby)\/)/]
@@ -32,6 +33,8 @@ module.exports = {
 
     config.module.rules.push({
       test: /\.(ts|tsx)$/,
+      loader: require.resolve("react-docgen-typescript-loader"),
+
       loader: require.resolve("babel-loader"),
       options: {
         presets: [["react-app", { flow: false, typescript: true }]],

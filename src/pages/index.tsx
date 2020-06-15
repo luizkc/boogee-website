@@ -24,7 +24,9 @@ export default function Home() {
   let linkProps = {
     icon: "fas fa-book-open",
     title: "docs/wiki",
-    subtitle: "learn how to sue boogie here",
+    subtitle: "learn how to use boogie here",
+    link: "https://luizkc.com",
+    new: true,
   }
   return (
     <div>

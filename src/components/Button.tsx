@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import "@fortawesome/fontawesome-free/css/all.min.css"
-
+import propTypes from "prop-types"
 type Size = "small"
 
 interface Props {
@@ -51,6 +51,17 @@ const Button = (props: Props) => {
       </button>
     )
   }
+}
+
+Button.propTypes = {
+  // onClick: (event: React.MouseEvent<HTMLButtonElement>) => void
+  // text: string
+  // icon?: string
+  // size?: Size
+  onClick: propTypes.func.isRequired,
+  text: propTypes.string.isRequired,
+  icon: propTypes.string,
+  size: propTypes.string,
 }
 
 export default Button
