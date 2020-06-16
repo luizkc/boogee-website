@@ -21,18 +21,32 @@ export default function Home() {
     icon: "fas fa-thumbs-up",
     iconBg: "rgb(87, 115, 211)",
   }
-  let linkProps = {
-    icon: "fas fa-book-open",
-    title: "docs/wiki",
-    subtitle: "learn how to use boogie here",
-    link: "https://luizkc.com",
-    new: true,
-  }
+  let linkProps = [
+    {
+      icon: "fas fa-book-open",
+      title: "docs/wiki",
+      subtitle: "learn how to use boogie here",
+      link: "https://luizkc.com",
+    },
+    {
+      icon: "fas fa-terminal",
+      title: "commands",
+      subtitle: "see a list of all the commands boogie has",
+      link: "https://luizkc.com",
+      new: true,
+    },
+    {
+      icon: "fas fa-columns",
+      title: "dashboard",
+      subtitle: "manage and configure your servers easily",
+      link: "https://luizkc.com",
+    },
+  ]
   return (
     <div>
       <Navbar />
       <h1 className="text-4xl">Your Discord Server’s Best Bud.</h1>
-      <div className="text-center">
+      <div className="text-center pt-4">
         <Card {...cardProps} />
       </div>
       <div className="text-center p-10">
@@ -42,9 +56,15 @@ export default function Home() {
             console.log("CLICKED")
           }}
         />
-        <p className="subheader">Quick Links</p>
       </div>
-      <QuickLink {...linkProps} />
+      <p className="subheader">Quick Links</p>
+      {linkProps.map(link => {
+        return (
+          <div className=" flex flex-row justify-center py-2">
+            <QuickLink {...link} />
+          </div>
+        )
+      })}
     </div>
   )
 }

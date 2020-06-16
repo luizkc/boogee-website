@@ -5,6 +5,7 @@ interface Props {
   icon: string
   size?: "small" | "tiny"
   background: string
+  hover?: boolean
 }
 
 export default function CardIcon(props: Props) {
@@ -34,6 +35,19 @@ export default function CardIcon(props: Props) {
         </button>
       )
     }
+  }
+  if (props.size === "tiny" && props.hover) {
+    return (
+      <button
+        disabled={true}
+        style={{ background: props.background }}
+        className=" cursor-pointer w-10 h-10 rounded-full cursor-default"
+      >
+        <span role="img" aria-label="icon">
+          <i className={props.icon}></i>
+        </span>
+      </button>
+    )
   }
   if (props.size === "tiny") {
     return (

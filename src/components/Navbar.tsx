@@ -26,22 +26,22 @@ export default function Navbar() {
             }
           >
             <ul className="nav-links-container">
-              <li className="nav-link">
+              <li className="lg:px-2 lg:py-5 lg:mx-10 lg:flex lg:items-center lg:text-xs lg:leading-snug font-semibold lg:text-2xl text-2xl lg:opacity-100">
                 <a href="#">
                   <span className="ml-2">pricing</span>
                 </a>
               </li>
-              <li className="nav-link">
+              <li className="lg:px-2 lg:py-5 lg:mx-10 lg:flex lg:items-center lg:text-xs lg:leading-snug font-semibold lg:text-2xl text-2xl lg:opacity-100">
                 <a href="#">
                   <span className="ml-2">docs</span>
                 </a>
               </li>
-              <li className="nav-link">
+              <li className="xs:pt-3 lg:px-2 lg:py-5 lg:mx-10 lg:flex lg:items-center lg:text-xs lg:leading-snug font-semibold lg:text-2xl text-2xl lg:opacity-100">
                 <a href="#">
                   <span className="ml-2">commands</span>
                 </a>
               </li>
-              <li className="nav-link">
+              <li className="pt-3 py-5">
                 <a href="#">
                   <Button
                     onClick={() => console.log("clicked")}
