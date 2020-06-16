@@ -32,10 +32,7 @@ export default function Home() {
     <div>
       <Navbar />
       <h1 className="text-4xl">Your Discord Server’s Best Bud.</h1>
-      <div
-        className="pt-4"
-        style={{ marginLeft: "15%", marginRight: "15%", maxWidth: "710px" }}
-      >
+      <div className="text-center">
         <Card {...cardProps} />
       </div>
       <div className="text-center p-10">
